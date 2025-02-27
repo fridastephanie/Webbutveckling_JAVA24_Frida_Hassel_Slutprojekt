@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: dbpassword
+      POSTGRES_DB: fulkoping
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - app-network
+    restart: always
+
+  fulkoping:
+    image: fridahassel/fulkoping:v13
+    container_name: fulkoping-container
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/fulkoping
+      DB_USERNAME: dbuser
+      DB_PASSWORD: dbpassword
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+volumes:
+  pgdata:
+
+networks:
+  app-network:
+    driver: bridge
