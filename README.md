@@ -26,7 +26,7 @@ Web-Fulkoping är en webbapplikation utvecklad i Java som använder MVC-mönstre
 
 ## Installation och körning
 1. Klona projektet:<br>
-   <i>git clone https://github.com/MH-GRIT/fulk-pings-bibliotek-webb-fridastephanie.git</i>
+   <i>git clone https://github.com/fridastephanie/Webbutveckling_JAVA24_Frida_Hassel_Slutprojekt.git</i>
 2. Skapa och konfigurera databasen
    * Starta Docker Desktop
    * Navigera till projektmappen och starta databasen med Docker Compose:<br>
