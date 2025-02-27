@@ -51,4 +51,7 @@ Web-Fulkoping är en webbapplikation utvecklad i Java som använder MVC-mönstre
 https://hub.docker.com/repository/docker/fridahassel/fulkoping/tags/v13/sha256-403587bb01046b9735a5203c1510a3aa9e3f1bdbb0bc8e1906a510d3f7b13cd8
 
 ## Övrigt
+* I SQL-filen finns två förskapade konton:<br>
+   * <i>E-post: user@fulkoping.se, lösenord: user
+   * E-post: admin@fulkoping.se, lösenord: admin</i>
 * Utskrifterna i applikationen är på svenska
